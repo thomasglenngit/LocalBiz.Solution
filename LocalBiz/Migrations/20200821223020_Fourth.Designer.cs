@@ -2,14 +2,16 @@
 using LocalBiz.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace LocalBiz.Migrations
 {
     [DbContext(typeof(LocalBizContext))]
-    partial class LocalBizContextModelSnapshot : ModelSnapshot
+    [Migration("20200821223020_Fourth")]
+    partial class Fourth
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

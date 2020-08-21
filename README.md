@@ -7,8 +7,6 @@
 ## Description
 A weekly code review project for Epicodus school, which allows the user to retrieve information on local buisinesses via their browser command line on this host's local URL. 
 
-<img src="LuckyPierre/wwwroot/assets/images/LPLoginPg.png"          style="float: left; margin-right: 10px;" />
-
 
 The following sitemap explains this database query relationship.
 
@@ -80,6 +78,28 @@ Reopen the Navigator > Schemas tab. Right click and select Refresh All. Our new 
 #### Query
 The following is the query information for access to this database on MySQL Workbench.
 ```
+CREATE DATABASE `local_biz` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */;
+CREATE TABLE `Bizs` (
+  `BizId` int(11) NOT NULL AUTO_INCREMENT,
+  `Name` longtext,
+  `Address` longtext,
+  `Type` longtext,
+  `Url` longtext,
+  PRIMARY KEY (`BizId`)
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+CREATE TABLE `__EFMigrationsHistory` (
+  `MigrationId` varchar(95) NOT NULL,
+  `ProductVersion` varchar(32) NOT NULL,
+  PRIMARY KEY (`MigrationId`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+CREATE TABLE `Restos` (
+  `RestoId` int(11) NOT NULL AUTO_INCREMENT,
+  `RName` longtext,
+  `RAddress` longtext,
+  `RType` longtext,
+  `RUrl` longtext,
+  PRIMARY KEY (`RestoId`)
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 ```
 #### Entity
