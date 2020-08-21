@@ -17,16 +17,16 @@ namespace LocalBiz.Controllers
       _db = db;
     }
 
-    // [HttpGet]
-    // public async Task<IActionResult> GetAll([FromQuery] UrlQuery urlQuery)
-    // {
-    //   var validUrlQuery = new UrlQuery(urlQuery.PageNumber, urlQuery.PageSize);
-    //   var pagedData = _db.Bizs
-    //     .OrderBy(thing => thing.LocationId)
-    //     .Skip((validUrlQuery.PageNumer - 1) * validUrlQuery.PageSize)
-    //     .Take(validUrlQuery.PageSize);
-    //   return Ok(pagedData);
-    // }
+    [HttpGet("Page")]
+    public IActionResult GetAll([FromQuery] UrlQuery urlQuery)
+    {
+      var validUrlQuery = new UrlQuery(urlQuery.PageNumber, urlQuery.PageSize);
+      var pagedData = _db.Bridges
+        .OrderBy(thing => thing.BridgeId)
+        .Skip((validUrlQuery.PageNumber - 1) * validUrlQuery.PageSize)
+        .Take(validUrlQuery.PageSize);
+      return Ok(pagedData);
+    }
 
     // GET api/Bizs
     [HttpGet]

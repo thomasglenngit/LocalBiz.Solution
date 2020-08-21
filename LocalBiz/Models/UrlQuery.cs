@@ -1,4 +1,4 @@
-using Architecture.Models;
+using LocalBiz.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.ComponentModel.DataAnnotations;
@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 using System;
 
 
-namespace Architecture.Models
+namespace LocalBiz.Models
 {
     public class UrlQuery
     {
