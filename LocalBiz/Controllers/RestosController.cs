@@ -37,15 +37,15 @@ namespace LocalBiz.Controllers
       {
         query = query.Where(entry => entry.RName == rname);
       }
-      if (address != null)
+      if (raddress != null)
       {
         query = query.Where(entry => entry.RAddress == raddress);
       }
-      if (type != null)
+      if (rtype != null)
       {
         query = query.Where(entry => entry.RType == rtype);
       }
-      if (url != null)
+      if (rurl != null)
       {
         query = query.Where(entry => entry.RUrl == rurl);
       }
