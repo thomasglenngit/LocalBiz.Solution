@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 
-namespace LocalBiz.Controllers
+namespace CretaceousPark.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
@@ -28,7 +28,6 @@ namespace LocalBiz.Controllers
         [HttpPost]
         public void Post([FromBody] string value)
         {
-          
         }
 
         // PUT api/values/5
