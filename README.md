@@ -47,6 +47,10 @@ Then from your command line run:
 Once the repository has been cloned, navigate to the to the application directory and run `$ dotnet restore`.
 Once 'restore' is run, enter `$ dotnet build`.
 
+### Packages
+The following packages must be added to run this application:
+1. In the CLI (Command Line Interface), enter the command: `dotnet new webapi --framework netcore app2.2`
+
 #### MySQL Setup
 In order to view and use the functionality of this project you must,
 1. Install MySQL on your computer. If you don't have it, you can download the .dmg file here:
@@ -72,7 +76,6 @@ Click Ok.
 Click Start Import.
 
 Reopen the Navigator > Schemas tab. Right click and select Refresh All. Our new test database will appear.
-
 
 
 #### Query
@@ -102,6 +105,7 @@ CREATE TABLE `Restos` (
 ) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 ```
+
 #### Entity
 Entity is a framework which coordinates the properties associated with the project models, and the corresponding datatables stored in MySQL. In order to keep the database refreshed with user inputs and possible changes to the application models, the following commands must be made after these inputs and changes:
 
@@ -110,6 +114,22 @@ Entity is a framework which coordinates the properties associated with the proje
 2. Following the migration the database must be updated with the following command: `dotnet ef database update`. Again, if all goes well, after entering this command, the terminal will affirm the update and migration by displaying the migration with a unique migration number and the affirmation, "Done".
 
 3. Check to see that the migration appears in MySQl Workbench, as well as newly formed "Migrations" folder in your VSCode editor.
+
+
+### API Queries Using Postman
+"Postman" is an application for querying local and remote databases. It can be downloaded at: https://www.postman.com/downloads/.
+
+To query the LocalBiz database, 
+1. In your CLI (Command Line Interface), enter `dotnet run`.
+2. Open Postman and locate the request field. 
+3. To the left of the field, make sure that the query type is set to "GET". 
+4. Below the request field, make sure that the data type is set to "raw", and the drop-down menu is set to "text".
+5. Enter the following URL in the request field: `http://localhost:5000/api/Bizs`. 
+6. Press the big blue button that says, "Send". This will display all the "Businesses" listed in the database in the lowest field on the page.
+7. To view all the Restaurants in the database, enter the following URS in the request field: `http://localhost:5000/api/Restos`.
+
+### Pagination 
+To adjust the number of database entries viewed on Postman, enter 
 
 ### Edit
 * To view and edit the code, open the application in your preferred code editor, such as Visual Studio Code.
