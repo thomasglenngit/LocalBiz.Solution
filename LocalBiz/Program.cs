@@ -21,5 +21,4 @@ namespace LocalBiz
             WebHost.CreateDefaultBuilder(args)
                 .UseStartup<Startup>();
     }
-    
 }

@@ -28,7 +28,6 @@ namespace LocalBiz.Controllers
         [HttpPost]
         public void Post([FromBody] string value)
         {
-            Console.WriteLine("hello, api");
         }
 
         // PUT api/values/5
