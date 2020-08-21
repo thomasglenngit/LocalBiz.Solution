@@ -20,7 +20,7 @@ The following sitemap explains this database query relationship.
 | Spec | Input | Output | 
 |:--------- |:--------- |:-------- |
 | The program will contain database of local businesses including their name and address |  |  | 
-| The program will construct an Application Programming Interface (API) to query the database  | "Flavor"  | "Sweet" |
+| The program will construct an Application Programming Interface (API) to query the database  | |
 | The program will test the queries using the Postman application |
 | The program will incorporate a pagination feature to limit the returned entries to three per page. |
 
