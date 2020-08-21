@@ -13,19 +13,19 @@ A weekly code review project for Epicodus school, which allows the user to retri
 The following sitemap explains this database query relationship.
 
 ## Database Structure
-<img src="LuckyPierre/wwwroot/assets/images/LPDatabase.png"          style="float: left; margin-right: 10px;" />
+<img src="LocalBiz/wwwroot/assets/images/Biz.png"          style="float: left; margin-right: 10px;" />
 
 ## Specifications
 
 | Spec | Input | Output | 
 |:--------- |:--------- |:-------- |
-| The program will contain database of local businesses including their name and address |  |  | 
-| The program will construct an Application Programming Interface (API) to query the database  | |
+| The program will contain database of local businesses including names, addresses, types, and emails |  
+| The program will construct an Application Programming Interface (API) to query the database  | 
 | The program will test the queries using the Postman application |
 | The program will incorporate a pagination feature to limit the returned entries to three per page. |
 
 ## Known Bugs
-*    
+*    None, yet...
 
 ## Setup/Installation Requirements
 #### View Online
