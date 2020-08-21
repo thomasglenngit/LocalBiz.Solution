@@ -9,6 +9,6 @@ namespace LocalBiz.Models
         {
         }
 
-        public DbSet<Adress> Adresses { get; set; }
+        public DbSet<Biz> Bizs { get; set; }
     }
 }
