@@ -129,7 +129,9 @@ To query the LocalBiz database,
 7. To view all the Restaurants in the database, enter the following URS in the request field: `http://localhost:5000/api/Restos`.
 
 ### Pagination 
-To adjust the number of database entries viewed on Postman, enter 
+To adjust the number of database entries viewed on Postman, 
+1. enter the following URL in the request line: `http://localhost:5000/api/Restos/page` or `http://localhost:5000/api/Bizs/page`.
+2. The pagination is set to three entries per page. To change this, go to the project file, in UrlQuery.cs, change the number `3` on lines 21 and twice on line 27 to desired number of entries.
 
 ### Edit
 * To view and edit the code, open the application in your preferred code editor, such as Visual Studio Code.
