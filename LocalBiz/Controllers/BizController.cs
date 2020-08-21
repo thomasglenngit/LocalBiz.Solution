@@ -21,8 +21,8 @@ namespace LocalBiz.Controllers
     public IActionResult GetAll([FromQuery] UrlQuery urlQuery)
     {
       var validUrlQuery = new UrlQuery(urlQuery.PageNumber, urlQuery.PageSize);
-      var pagedData = _db.Bridges
-        .OrderBy(thing => thing.BridgeId)
+      var pagedData = _db.Bizs
+        .OrderBy(thing => thing.BizId)
         .Skip((validUrlQuery.PageNumber - 1) * validUrlQuery.PageSize)
         .Take(validUrlQuery.PageSize);
       return Ok(pagedData);
