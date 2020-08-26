@@ -126,7 +126,8 @@ To query the LocalBiz database,
 4. Below the request field, make sure that the data type is set to "raw", and the drop-down menu is set to "text".
 5. Enter the following URL in the request field: `http://localhost:5000/api/Bizs`. 
 6. Press the big blue button that says, "Send". This will display all the "Businesses" listed in the database in the lowest field on the page.
-7. To view all the Restaurants in the database, enter the following URS in the request field: `http://localhost:5000/api/Restos`.
+7. To view all the Restaurants in the database, enter the following URL in the request field: `http://localhost:5000/api/Restos`.
+8. To view all Businsesses and Restaurants in the database, enter the following URL in the request field: `http://localhost:500/api/Bizs&Restos`.
 
 ### Pagination 
 To adjust the number of database entries viewed on Postman, 
@@ -139,8 +140,9 @@ To adjust the number of database entries viewed on Postman,
 ## Technologies Used
 * Visual Studio Code (code editor)
 * C#/.NET
+* MS Entity
+* Postman
 * GitHub
-* MSTests
 * MacOS Catalina
 * MySQL Workbench
 * CSS
