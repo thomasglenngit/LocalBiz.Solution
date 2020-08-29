@@ -11,7 +11,7 @@ A weekly code review project for Epicodus school, which allows the user to retri
 The following sitemap explains this database query relationship.
 
 ## Database Structure
-<img src="LocalBiz/wwwroot/assets/images/Biz.png"          style="float: left; margin-right: 10px;" />
+<img src="LocalBiz/wwwroot/assets/Images/Biz.png"          style="float: left; margin-right: 10px;" />
 
 ## Specifications
 
