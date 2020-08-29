@@ -1,4 +1,4 @@
-# _Local Buisiness Api_
+# _Local Business Api_
 
 #### _C#/.NET Project for [Epicodus](https://www.epicodus.com/), 2020.08.21_
 
@@ -15,8 +15,8 @@ The following sitemap explains this database query relationship.
 
 ## Specifications
 
-| Spec | Input | Output | 
-|:--------- |:--------- |:-------- |
+| Spec |
+|:--------- |
 | The program will contain database of local businesses including names, addresses, types, and emails |  
 | The program will construct an Application Programming Interface (API) to query the database  | 
 | The program will test the queries using the Postman application |
